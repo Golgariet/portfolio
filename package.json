@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass SCSS/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Golgariet/portfolio.git"
+  },
+  "author": "Anton Bibergal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Golgariet/portfolio/issues"
+  },
+  "homepage": "https://github.com/Golgariet/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
