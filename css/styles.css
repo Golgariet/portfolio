@@ -64,6 +64,32 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-in-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite; }
+  .heading-secondary:hover {
+    transform: skewY(2deg); }
+
+@keyframes textclip {
+  to {
+    background-position: 200% center; } }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -105,6 +131,11 @@ body {
 .btn--anime {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.section-about {
+  background-color: var(--color-grey-light-1);
+  padding: 25rem 0;
+  margin-top: -20vh; }
 
 .header {
   height: 95vh;
@@ -163,6 +194,7 @@ body {
   --color-primary: #55c57a;
   --color-primary-light: #7ed56f;
   --color-primary-dark: #28b485;
+  --color-grey-light-1: #f7f7f7;
   --color-grey-dark: #777;
   --color-white: #fff;
   --color-black: #000;
