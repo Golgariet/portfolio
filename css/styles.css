@@ -177,6 +177,23 @@ body {
   padding: 25rem 0;
   margin-top: -20vh; }
 
+.about {
+  margin-left: 10rem; }
+  .about__information-data {
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    margin-bottom: 2rem; }
+  .about__information-icon {
+    fill: red;
+    font-size: 1.5rem;
+    margin-right: 3rem; }
+  .about__information-subtitle {
+    display: block;
+    font-weight: 900; }
+  .about__information-subtitle-small {
+    font-size: 1.3rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(0, 180, 133, 0.8)), url(../images/main-1.jpg);
