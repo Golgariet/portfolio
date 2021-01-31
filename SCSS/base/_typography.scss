@@ -42,9 +42,9 @@ body {
   // );
   background-image: linear-gradient(
     to right,
-    #095fab 10%,
-    #25abe8 50%,
-    #57d75b 60%
+    var(--color-fun-1) 10%,
+    var(--color-fun-2) 50%,
+    var(--color-fun-3) 60%
   );
   -webkit-background-clip: text;
   color: transparent;
@@ -62,7 +62,6 @@ body {
   animation: textclip 1.5s linear infinite;
 
   &:hover {
-    transform: skewY(2deg);
   }
 
   @keyframes textclip {
