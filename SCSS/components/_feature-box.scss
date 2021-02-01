@@ -1,0 +1,47 @@
+.feature-box {
+  &--main {
+    background-color: rgba(#ffffff, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  &__icon {
+    filter: invert(48%) sepia(29%) saturate(1872%) hue-rotate(153deg)
+      brightness(97%) contrast(103%);
+  }
+
+  &__text {
+  }
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url('//yariv.io/Portfolio/glass/img/back.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(1.1);
+  z-index: 2;
+  animation: reveal ease 0.8s 1 forwards;
+}
+
+.card-content {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  padding: 23% 22% 0 20%;
+  box-sizing: border-box;
+  font-weight: 300;
+  text-align: right;
+  color: white;
+  font-size: 135px;
+  line-height: 1;
+  z-index: 3;
+  animation: appear ease 1s 1 1s forwards;
+}
