@@ -35,11 +35,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  // background-image: linear-gradient(
-  //   to right,
-  //   var(--color-primary-light),
-  //   var(--color-primary-dark)
-  // );
   background-image: linear-gradient(
     to right,
     var(--color-fun-1) 10%,
@@ -75,6 +70,11 @@ body {
   font-size: var(--def-font-size);
   font-weight: 700;
   text-transform: uppercase;
+  // margin: 1rem;
+
+  &--2 {
+    margin-bottom: 2rem;
+  }
 }
 
 .paragraph {
