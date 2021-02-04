@@ -4,8 +4,6 @@
   height: 50rem;
 
   &__side {
-    color: #fff;
-    font-size: 2rem;
     height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -14,6 +12,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 0.3rem;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
     &--front {
@@ -36,10 +35,53 @@
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+        url(../images/main-1.jpg);
+    }
+
+    &--2 {
+      background-image: url(../images/main-1.jpg);
+    }
+
+    &--3 {
+      background-image: url(../images/main-1.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--color-white);
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#ffb900, 0.85),
+        rgba(#ff7730, 0.85)
+      );
+    }
   }
 }
