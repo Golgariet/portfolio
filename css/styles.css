@@ -292,8 +292,7 @@ body {
 .examples {
   display: block;
   padding: 3.8rem 3%;
-  background-color: #fff;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.157);
+  background-color: var(--color-grey-light-1);
   position: relative; }
   .examples h3 {
     color: #444;
@@ -318,8 +317,8 @@ body {
 -------------------------------------------------------- */
 .cssProgress {
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
   .cssProgress .progress2 {
     position: relative;
     overflow: hidden;
@@ -386,6 +385,24 @@ body {
   .progress2 .cssProgress-label {
     line-height: 18px; }
 
+.about {
+  background-color: var(--color-grey-light-1);
+  margin-left: 10rem; }
+  .about__information-data {
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    margin-bottom: 2rem; }
+  .about__information-icon {
+    fill: red;
+    font-size: 1.5rem;
+    margin-right: 3rem; }
+  .about__information-subtitle {
+    display: block;
+    font-weight: 900; }
+  .about__information-subtitle-small {
+    font-size: 1.3rem; }
+
 .section-about {
   background-color: var(--color-grey-light-1);
   padding: 16rem 0;
@@ -407,25 +424,7 @@ body {
 
 .section-skills {
   background-color: var(--color-grey-light-1);
-  padding: 15rem 0; }
-
-.about {
-  background-color: var(--color-grey-light-1);
-  margin-left: 10rem; }
-  .about__information-data {
-    display: flex;
-    align-items: center;
-    padding-left: 5rem;
-    margin-bottom: 2rem; }
-  .about__information-icon {
-    fill: red;
-    font-size: 1.5rem;
-    margin-right: 3rem; }
-  .about__information-subtitle {
-    display: block;
-    font-weight: 900; }
-  .about__information-subtitle-small {
-    font-size: 1.3rem; }
+  padding: 5rem 0; }
 
 .header {
   height: 95vh;

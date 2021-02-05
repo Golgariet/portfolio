@@ -73,8 +73,8 @@
   display: block;
   //   margin-bottom: 65px;
   padding: 3.8rem 3%;
-  background-color: #fff;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.157);
+  background-color: var(--color-grey-light-1);
+  //box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.157);
   position: relative;
 
   //   &:last-child {
@@ -218,8 +218,8 @@
 -------------------------------------------------------- */
 .cssProgress {
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 
   .progress2 {
     position: relative;
