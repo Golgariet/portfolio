@@ -27,30 +27,14 @@
   margin-top: -11rem;
 }
 
+.section-skills {
+  background-color: var(--color-grey-light-1);
+  padding: 15rem 0;
+}
+
 .about {
+  background-color: var(--color-grey-light-1);
   margin-left: 10rem;
-
-  // &__container {
-  //   row-gap: 2rem;
-  // }
-
-  // &__data {
-  //   text-align: center;
-  // }
-
-  // &__description {
-  //   margin-bottom: var(--m4);
-  // }
-
-  // &__information {
-  //   margin-bottom: 2rem;
-  // }
-
-  // &__information-title {
-  //   font-size: var(--h3-font-size);
-  //   color: var(--first-color-dark);
-  //   margin-bottom: 2rem;
-  // }
 
   &__information-data {
     display: flex;
