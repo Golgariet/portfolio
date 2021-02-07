@@ -101,24 +101,24 @@ body {
     margin-bottom: 3rem; }
 
 .util-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .util-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .util-margin-bottom-med {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .util-margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .util-margin-top-big {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .util-margin-top-huge {
-  margin-top: 10rem; }
+  margin-top: 10rem !important; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -126,7 +126,9 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: var(--def-font-size); }
+  font-size: var(--def-font-size);
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -135,7 +137,8 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -366,7 +369,8 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
-  display: block; }
+  display: block;
+  transition: all 0.3s; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -418,7 +422,7 @@ body {
   background-size: cover; }
 
 .contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/main-1.jpg);
+  background-image: linear-gradient(105deg, rgba(247, 247, 247, 0.9) 0%, rgba(247, 247, 247, 0.9) 50%, transparent 50%), url(../images/test.jpg);
   background-size: 100%;
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
