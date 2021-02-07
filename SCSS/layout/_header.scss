@@ -20,14 +20,14 @@
   &__logo {
     height: 5.5rem;
     transition: all 0.2s;
-  }
 
-  &__logo:hover {
-    transform: translateY(-3px);
-  }
+    &:hover {
+      transform: translateY(-3px);
+    }
 
-  &__logo:active {
-    transform: translateY(-1px);
+    &:active {
+      transform: translateY(-1px);
+    }
   }
 
   &__text-box {
