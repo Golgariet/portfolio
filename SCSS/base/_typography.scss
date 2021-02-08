@@ -56,7 +56,8 @@ body {
   -webkit-text-fill-color: transparent;
   animation: textclip 1.5s linear infinite;
 
-  &:hover {
+  &--options {
+    margin-right: 15rem;
   }
 
   @keyframes textclip {

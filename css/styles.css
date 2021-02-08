@@ -83,6 +83,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 1.5s linear infinite; }
+  .heading-secondary--options {
+    margin-right: 15rem; }
 
 @keyframes textclip {
   to {
@@ -395,7 +397,8 @@ body {
 .section-about {
   background-color: var(--color-grey-light-1);
   padding: 16rem 0;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  margin-right: -15rem; }
 
 .section-features {
   padding: 25rem 0;
