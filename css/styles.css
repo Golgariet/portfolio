@@ -547,7 +547,9 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
 
 .menu__background {
   height: 6rem;
@@ -609,6 +611,41 @@ body {
   opacity: 1;
   width: 100%; }
 
+.menu__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .menu__icon, .menu__icon::before, .menu__icon::after {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: var(--color-dark-dif-2);
+    display: inline-block; }
+  .menu__icon::before, .menu__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .menu__icon::before {
+    top: -0.8rem; }
+  .menu__icon::after {
+    top: 0.8rem; }
+
+.menu__button:hover .menu__icon::before {
+  top: -1rem; }
+
+.menu__button:hover .menu__icon::after {
+  top: 1rem; }
+
+.menu__checkbox:checked + .menu__button .menu__icon {
+  background-color: transparent; }
+
+.menu__checkbox:checked + .menu__button .menu__icon:before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.menu__checkbox:checked + .menu__button .menu__icon:after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 :root {
   --color-primary: #55c57a;
   --color-primary-light: #7ed56f;
@@ -619,6 +656,7 @@ body {
   --color-grey-dark: #777;
   --color-grey-dark-dif: #999;
   --color-dark-dif: #0f1123;
+  --color-dark-dif-2: #333;
   --color-white: #fff;
   --color-black: #000;
   --color-fun-1: #095fab;
