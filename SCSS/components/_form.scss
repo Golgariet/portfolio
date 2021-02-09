@@ -1,6 +1,6 @@
 .form {
   &__group:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   &__input {
@@ -46,65 +46,3 @@
     transform: translateY(-4rem);
   }
 }
-
-// .contact {
-//   &__container {
-//     row-gap: 3rem;
-//   }
-
-//   &__input {
-//     width: 100%;
-//     padding: 1rem;
-//     outline: none;
-//     border: none;
-//     background-color: var(--color-grey-light-1);
-//     font-size: var(--normal-font-size);
-//     margin-bottom: 1.5rem;
-//     border-radius: 0.5rem;
-//   }
-
-//   & ::placeholder {
-//     color: var(--color-grey-light-1);
-//     font-family: var(--body-font);
-//     font-weight: var(--font-medium);
-//   }
-
-//   &__btn {
-//     outline: none;
-//     border: none;
-//     font-family: var(--body-font);
-//     font-size: var(--normal-font-size);
-//     cursor: pointer;
-//   }
-
-//   &__info {
-//     margin-bottom: 2rem;
-//   }
-
-//   &__subtitle {
-//     font-size: 1.5rem;
-//     color: var(--color-grey-light-1);
-//     margin-bottom: 1rem;
-//   }
-
-//   &__text {
-//     display: block;
-//     padding-left: 1rem;
-//   }
-
-//   //   @media screen and (min-width: 768px) {
-//   //     &__inputs {
-//   //       display: grid;
-//   //       column-gap: 1.5rem;
-//   //     }
-
-//   //     &__info {
-//   //       padding-left: 3rem;
-//   //     }
-
-//   //     &__container,
-//   //     &__inputs {
-//   //       grid-template-columns: repeat(2, 1fr);
-//   //     }
-//   //   }
-// }

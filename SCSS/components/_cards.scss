@@ -27,9 +27,18 @@
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
       }
       &-2 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
       }
       &-3 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+      }
+      &-4 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+      }
+      &-5 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+      }
+      &-6 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
       }
     }
@@ -57,7 +66,8 @@
     }
 
     &--2 {
-      background-image: url(../images/main-1.jpg);
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+        url(../images/main-1.jpg);
     }
 
     &--3 {
@@ -83,6 +93,41 @@
     box-decoration-break: clone;
 
     &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#ffb900, 0.85),
+        rgba(#ff7730, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#2998ff, 0.85),
+        rgba(#5643fa, 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#ffb900, 0.85),
+        rgba(#ff7730, 0.85)
+      );
+    }
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#ffb900, 0.85),
+        rgba(#ff7730, 0.85)
+      );
+    }
+    &--5 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#ffb900, 0.85),
+        rgba(#ff7730, 0.85)
+      );
+    }
+    &--6 {
       background-image: linear-gradient(
         to right bottom,
         rgba(#ffb900, 0.85),
