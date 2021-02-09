@@ -30,16 +30,16 @@
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
       }
       &-3 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-image: linear-gradient(to right bottom, #ed5107, #c70d3a);
       }
       &-4 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-image: linear-gradient(to right bottom, #da723c, #91091e);
       }
       &-5 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-image: linear-gradient(to right bottom, #f16896, #4531b1);
       }
       &-6 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-image: linear-gradient(to right bottom, #7c9473, #557174);
       }
     }
   }
@@ -71,7 +71,23 @@
     }
 
     &--3 {
-      background-image: url(../images/main-1.jpg);
+      background-image: linear-gradient(to right bottom, #ed5107, #c70d3a),
+        url(../images/main-1.jpg);
+    }
+
+    &--4 {
+      background-image: linear-gradient(to right bottom, #da723c, #91091e),
+        url(../images/main-1.jpg);
+    }
+
+    &--5 {
+      background-image: linear-gradient(to right bottom, #f16896, #4531b1),
+        url(../images/main-1.jpg);
+    }
+
+    &--6 {
+      background-image: linear-gradient(to right bottom, #7c9473, #557174),
+        url(../images/main-1.jpg);
     }
   }
 
@@ -109,29 +125,29 @@
     &--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(#ffb900, 0.85),
-        rgba(#ff7730, 0.85)
+        rgba(#ed5107, 0.85),
+        rgba(#c70d3a, 0.85)
       );
     }
     &--4 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(#ffb900, 0.85),
-        rgba(#ff7730, 0.85)
+        rgba(#da723c, 0.85),
+        rgba(#91091e, 0.85)
       );
     }
     &--5 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(#ffb900, 0.85),
-        rgba(#ff7730, 0.85)
+        rgba(#f16896, 0.85),
+        rgba(#4531b1, 0.85)
       );
     }
     &--6 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(#ffb900, 0.85),
-        rgba(#ff7730, 0.85)
+        rgba(#7c9473, 0.85),
+        rgba(#557174, 0.85)
       );
     }
   }
@@ -165,17 +181,17 @@
     text-align: center;
   }
 
-  &__price-box {
+  &__info-box {
     color: var(--color-white);
     margin-bottom: 8rem;
   }
 
-  &__price-only {
+  &__info-only {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
 
-  &__price-value {
+  &__info-name {
     font-size: 6rem;
     font-weight: 100;
   }
