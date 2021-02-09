@@ -210,7 +210,8 @@ body {
 .card {
   perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  display: none; }
   .card__side {
     height: 52rem;
     transition: all 0.8s ease;
