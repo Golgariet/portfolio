@@ -77,7 +77,7 @@ body {
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: var(--color-white);
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -417,6 +417,99 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
+
+.education {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  .education__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    background-color: var(--color-white);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s; }
+  .education__left {
+    width: 33.333333%;
+    display: table-cell; }
+  .education__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .education__img {
+    display: block;
+    width: 100%; }
+  .education__container {
+    display: grid;
+    row-gap: 4rem; }
+  .education__story {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr; }
+  .education__year, .education__race {
+    font-size: 2rem;
+    margin-bottom: 0.25rem; }
+  .education__university, .education__special {
+    display: block;
+    font-size: 2rem; }
+  .education__year, .education__university {
+    text-align: right; }
+  .education__time {
+    padding: 0 1rem;
+    justify-self: center; }
+  .education__rounder {
+    position: relative;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--color-secondary-dark-3);
+    border-radius: 50%; }
+  .education__rounder::before {
+    content: '';
+    position: absolute;
+    transform: translate(-0.4rem, -0.4rem);
+    width: 2rem;
+    height: 2rem;
+    border: 0.1rem solid var(--color-secondary-dark-3);
+    border-radius: 50%; }
+  .education__line {
+    display: block;
+    height: 90%;
+    width: 0.2rem;
+    background-color: var(--color-secondary-dark-3);
+    transform: translate(0.5rem, -0.4rem); }
+  .education:target {
+    opacity: 1;
+    visibility: visible; }
+  .education:target .education__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .education__close:link, .education__close:visited {
+    color: var(--color-grey-dark);
+    position: absolute;
+    top: 2.2rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    line-height: 1; }
+  .education__close:hover {
+    color: var(--color-primary); }
 
 .section-about {
   background-color: var(--color-grey-light-1);
