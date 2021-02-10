@@ -630,11 +630,13 @@
           </div>
         </div>
 
-
-        
-        <div class="util-center-text util-margin-top-huge">
+        <div class="util-center-text" style="margin-top: -5rem;">
           <a href="#" class="btn btn--green" id="More">MORE STUFF</a>
         </div>
+
+
+        
+
 
 
       </section>
@@ -806,9 +808,6 @@ $(document).ready(function(){
   $("#More").on("click", function(e){
     e.preventDefault();
     $(".card").slice(0, 6).slideDown();
-    if($(".card").length == 0) {
-      $("#More").text("No Content").addClass("noContent");
-    }
   });
   
 })

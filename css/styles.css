@@ -528,12 +528,15 @@ body {
 
 .section-projects {
   background-color: var(--color-grey-light-1);
-  padding: 25rem 0 15rem 0;
+  padding: 25rem 0 10rem 0;
   margin-top: -18rem; }
 
 .section-skills {
   background-color: var(--color-grey-light-1);
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  transform: skewY(-7deg); }
+  .section-skills > * {
+    transform: skewY(7deg); }
 
 .section-contact {
   padding: 15rem 0;
