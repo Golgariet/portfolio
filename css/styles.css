@@ -514,8 +514,7 @@ body {
 .section-about {
   background-color: var(--color-grey-light-1);
   padding: 16rem 0;
-  margin-top: -20vh;
-  margin-right: -15rem; }
+  margin-top: -20vh; }
 
 .section-features {
   padding: 25rem 0;
