@@ -9,6 +9,24 @@
 .row {
   max-width: var(--grid-width);
   margin: 0 auto;
+  // margin-left: 45rem;
+
+  // &--exc {
+  //   margin-left: 42rem;
+  //   @include respond(tab-port) {
+  //     margin-left: -42rem;
+  //   }
+  // }
+
+  &--exc {
+    // margin-left: 42rem;
+    display: flex;
+    //width: 100%;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: var(--gutter-v);
@@ -68,49 +86,3 @@
     );
   }
 }
-
-// //how to select all col- from CSS GRID
-// [class^="col-"] {
-//     //background-color: orangered;
-//     float: left;
-
-//     &:not(:last-child){
-//         margin-right: $gutter-horizontal;
-
-//         @include respond(tab-port) {
-//             margin-right: 0;
-//             margin-bottom: $gutter-vertical-small;
-//           }
-//     }
-
-//     @include respond(tab-port) {
-//         width: 100% !important;
-//       }
-
-// .col-1-of-2 {
-//     width: calc((100% - #{var(--gutter-h)}) / 2);
-//     background-color: orangered;
-//   }
-
-//   .col-1-of-3 {
-//     width: calc((100% - 2 * #{var(--gutter-h)}) / 3);
-//   }
-
-//   .col-1-of-4 {
-//     width: calc((100% - 3 * #{var(--gutter-h)}) / 4);
-//   }
-
-//   .col-2-of-3 {
-//     width: calc(2 * ((100% - 2 * #{var(--gutter-h)}) / 3) + #{var(--gutter-h)});
-//   }
-
-//   .col-2-of-4 {
-//     width: calc(2 * ((100% - 3 * #{var(--gutter-h)}) / 4) + #{var(--gutter-h)});
-//   }
-
-//   .col-3-of-4 {
-//     width: calc(
-//       3 * ((100% - 3 * #{var(--gutter-h)}) / 4) + 2 * #{var(--gutter-h)}
-//     );
-//   }
-// }

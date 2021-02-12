@@ -1,6 +1,10 @@
 .about {
   background-color: var(--color-grey-light-1);
-  margin-left: 10rem;
+  margin-left: 17rem;
+
+  @include respond(tab-port) {
+    margin-left: 11rem;
+  }
 
   &__information-data {
     display: flex;
@@ -22,26 +26,8 @@
   &__information-subtitle-small {
     font-size: 1.3rem;
   }
+}
 
-  // @media screen and (min-width: 768px) {
-  //   &__container {
-  //     grid-template-columns: repeat(2, 1fr);
-  //   }
-
-  //   &__data {
-  //     text-align: initial;
-  //   }
-
-  //   &__description {
-  //     margin-bottom: var(--m5);
-  //   }
-
-  //   &__img {
-  //     width: 220px;
-  //   }
-
-  //   &__information {
-  //     padding-left: 4rem;
-  //   }
-  // }
+.column-text {
+  // margin-right: 10rem;
 }

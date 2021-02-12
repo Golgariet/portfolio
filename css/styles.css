@@ -103,7 +103,8 @@ body {
   -webkit-text-fill-color: transparent;
   animation: textclip 1.5s linear infinite; }
   .heading-secondary--options {
-    margin-right: 15rem; }
+    margin-right: 15rem;
+    margin-left: 15rem; }
 
 @keyframes textclip {
   to {
@@ -391,7 +392,10 @@ body {
 
 .about {
   background-color: var(--color-grey-light-1);
-  margin-left: 10rem; }
+  margin-left: 17rem; }
+  @media (max-width: 56.25em) {
+    .about {
+      margin-left: 11rem; } }
   .about__information-data {
     display: flex;
     align-items: center;
@@ -608,6 +612,11 @@ body {
 .row {
   max-width: var(--grid-width);
   margin: 0 auto; }
+  .row--exc {
+    display: flex; }
+    @media (max-width: 56.25em) {
+      .row--exc {
+        flex-direction: column; } }
   .row:not(:last-child) {
     margin-bottom: var(--gutter-v); }
     @media (max-width: 56.25em) {
