@@ -78,10 +78,24 @@
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(#000, 0.2);
 
-  height: 70rem;
+  // height: 70rem;
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba(#f7f7f7, 0.9) 0%,
+        rgba(#f7f7f7, 0.9) 70%,
+        transparent 70%
+      ),
+      url(../images/test.jpg);
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
   }
 }
