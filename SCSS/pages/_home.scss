@@ -84,10 +84,21 @@
     background-image: linear-gradient(
         105deg,
         rgba(#f7f7f7, 0.9) 0%,
-        rgba(#f7f7f7, 0.9) 70%,
-        transparent 70%
+        rgba(#f7f7f7, 0.9) 65%,
+        transparent 65%
       ),
       url(../images/test.jpg);
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba(#f7f7f7, 0.9) 0%,
+        rgba(#f7f7f7, 0.9) 100%
+      ),
+      url(../images/test.jpg);
+    background-size: cover;
   }
 
   &__form {
@@ -95,7 +106,11 @@
     padding: 6rem;
 
     @include respond(tab-land) {
-      width: 70%;
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
   }
 }
