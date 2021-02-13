@@ -93,11 +93,12 @@
 
       <nav class="menu__navigation">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link"><span>01</span>Antons</a></li>
-          <li class="menu__item"><a href="#" class="menu__link"><span>02</span>About Myself</a></li>
-          <li class="menu__item"><a href="#" class="menu__link"><span>03</span>Skills</a></li>
-          <li class="menu__item"><a href="#" class="menu__link"><span>04</span>Projects</a></li>
-          <li class="menu__item"><a href="#" class="menu__link"><span>05</span>Contact Me</a></li>
+          <li class="menu__item"><a href="#antons" class="menu__link"><span>01</span>Myself</a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><span>02</span>About</a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><span>03</span>Features</a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><span>04</span>Skills</a></li>
+          <li class="menu__item"><a href="#" class="menu__link"><span>05</span>Projects</a></li>
+          <li class="menu__item"><a href="#contact" class="menu__link"><span>06</span>Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -106,7 +107,7 @@
 
 
 
-    <header class="header">
+    <header class="header" id="antons">
       <div class="header__logo-box">
         <a href="https://www.google.com"
           ><img src="assets/github.svg" alt="Logo" class="header__logo"
@@ -124,7 +125,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="util-center-text util-margin-bottom-big">
           <h2 class="heading-secondary heading-secondary--options" >About Myself</h2>
         </div>
@@ -522,7 +523,10 @@
               </div>
             </div>
           </div>
+
         </div>
+
+
 
         <div class="row">
           <div class="col-1-of-3">
@@ -625,21 +629,23 @@
                 </div>
               </div>
             </div>
+
           </div>
+
         </div>
+
+
 
         <div class="util-center-text" style="margin-top: -5rem;">
-          <a href="#" class="btn btn--green" id="More">MORE STUFF</a>
+          <a href="#" class="btn btn--green" id="More" >MORE PROJECTS</a>
         </div>
-
-
         
 
 
 
       </section>
 
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
 
         <div class="row">
           <div class="contact">
@@ -749,11 +755,12 @@
         <div class="col-1-of-2">
           <div class="footer__nav">
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Myself</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Features</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Skills</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Projects</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -807,8 +814,16 @@ $(document).ready(function(){
     e.preventDefault();
     $(".card").slice(0, 6).slideDown();
   });
+
+
+
+  
+
+  
   
 })
+
+
 
     </script>
 

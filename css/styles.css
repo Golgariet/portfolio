@@ -797,6 +797,10 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 37.5em) {
+    .menu__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .menu__background {
   height: 6rem;
@@ -808,6 +812,10 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 37.5em) {
+    .menu__background {
+      top: 3rem;
+      right: 3rem; } }
 
 .menu__navigation {
   height: 100vh;
@@ -863,7 +871,7 @@ body {
   margin-top: 3.5rem; }
   .menu__icon, .menu__icon::before, .menu__icon::after {
     width: 3rem;
-    height: 0.2rem;
+    height: 2px;
     background-color: var(--color-dark-dif-2);
     display: inline-block; }
   .menu__icon::before, .menu__icon::after {
@@ -876,20 +884,20 @@ body {
   .menu__icon::after {
     top: 0.8rem; }
 
-.menu__button:hover .menu__icon::before {
+.menu__button:hover .menu__icon:before {
   top: -1rem; }
 
-.menu__button:hover .menu__icon::after {
+.menu__button:hover .menu__icon:after {
   top: 1rem; }
 
 .menu__checkbox:checked + .menu__button .menu__icon {
   background-color: transparent; }
 
-.menu__checkbox:checked + .menu__button .menu__icon:before {
+.menu__checkbox:checked + .menu__button .menu__icon::before {
   top: 0;
   transform: rotate(135deg); }
 
-.menu__checkbox:checked + .menu__button .menu__icon:after {
+.menu__checkbox:checked + .menu__button .menu__icon::after {
   top: 0;
   transform: rotate(-135deg); }
 
