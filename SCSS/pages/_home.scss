@@ -12,8 +12,8 @@
   padding: 25rem 0;
   background-image: linear-gradient(
       to right bottom,
-      rgba(55, 152, 217, 0.8),
-      rgba(86, 67, 250, 0.8)
+      rgba(126, 213, 111, 0.8),
+      rgba(0, 180, 133, 0.8)
     ),
     url(../images/mail.jpg);
   background-size: cover;
@@ -28,13 +28,6 @@
     padding: 10rem 0;
   }
 }
-
-// rgba(126, 213, 111, 0.8),
-//       rgba(0, 180, 133, 0.8)
-//     ),
-
-// --bar-color-light-blue: #3798d9;
-// --bar-color-blue-dark: #5643fa;
 
 .section-projects {
   background-color: var(--color-grey-light-1);
