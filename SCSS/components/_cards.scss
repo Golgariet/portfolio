@@ -62,32 +62,32 @@
 
     &--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-        url(../images/work-1.png);
+        url(../images/work-2.jpg);
     }
 
     &--2 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-        url(../images/main-1.jpg);
+        url(../images/work-3.jpg);
     }
 
     &--3 {
       background-image: linear-gradient(to right bottom, #ed5107, #c70d3a),
-        url(../images/work-3.png);
+        url(../images/work-4.jpg);
     }
 
     &--4 {
       background-image: linear-gradient(to right bottom, #da723c, #91091e),
-        url(../images/main-1.jpg);
+        url(../images/work.jpg);
     }
 
     &--5 {
       background-image: linear-gradient(to right bottom, #f16896, #4531b1),
-        url(../images/main-1.jpg);
+        url(../images/work-5.jpg);
     }
 
     &--6 {
       background-image: linear-gradient(to right bottom, #7c9473, #557174),
-        url(../images/main-1.jpg);
+        url(../images/work-6.jpg);
     }
   }
 
@@ -193,8 +193,8 @@
   }
 
   &__info-name {
-    font-size: 6rem;
-    font-weight: 100;
+    font-size: 5rem;
+    font-weight: 300;
   }
 
   @include respond(tab-port) {
