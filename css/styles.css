@@ -213,6 +213,9 @@ body {
   border-bottom: 0.1rem solid var(--color-primary);
   padding: 0.3rem;
   transition: all 0.2s; }
+  @media (max-width: 56.25em) {
+    .btn-text:link, .btn-text:visited {
+      display: none; } }
 
 .btn-text:hover {
   background-color: var(--color-primary);
@@ -436,7 +439,7 @@ body {
   margin-left: 17rem; }
   @media (max-width: 56.25em) {
     .about {
-      margin-left: 11rem; } }
+      margin-left: 0; } }
   .about__information-data {
     display: flex;
     align-items: center;
@@ -519,6 +522,9 @@ body {
   .education__left {
     width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .education__left {
+        display: none; } }
   .education__right {
     width: 66.6666667%;
     display: table-cell;
@@ -539,6 +545,9 @@ body {
   .education__university, .education__special {
     display: block;
     font-size: 2rem; }
+    @media (max-width: 56.25em) {
+      .education__university, .education__special {
+        display: none; } }
   .education__year, .education__university {
     text-align: right; }
   .education__time {

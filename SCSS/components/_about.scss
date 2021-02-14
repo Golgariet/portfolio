@@ -3,7 +3,7 @@
   margin-left: 17rem;
 
   @include respond(tab-port) {
-    margin-left: 11rem;
+    margin-left: 0;
   }
 
   &__information-data {
@@ -26,8 +26,4 @@
   &__information-subtitle-small {
     font-size: 1.3rem;
   }
-}
-
-.column-text {
-  // margin-right: 10rem;
 }
